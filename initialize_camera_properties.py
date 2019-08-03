@@ -1,4 +1,5 @@
 import bpy
+from bpy.app.handlers import persistent
 
 class Initialize_Camera_Properties:
     lastCamera = None
@@ -13,6 +14,7 @@ class Initialize_Camera_Properties:
                 Initialize_Camera_Properties.update_manager(scene)
             Initialize_Camera_Properties.lastCamera = currentCam
     
+    @persistent
     def update_manager(scene):
         if scene.camera.data.res_type == 'res_type_paper':
             Initialize_Camera_Properties.update_camera(scene)

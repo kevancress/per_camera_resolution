@@ -5,6 +5,7 @@ from bl_operators.presets import AddPresetBase
 from .custom_preset_base import Custom_Preset_Base
 import os
 
+
 class CAMERA_PX_Presets(Menu):
     bl_label = "Resolution Presets"
     default_lable = "Resolution Presets"

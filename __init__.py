@@ -43,6 +43,7 @@ from bpy.utils import register_class, unregister_class
 from .initialize_camera_properties import Initialize_Camera_Properties
 from .panels import CAMERA_PX_Presets, AddPixelResPreset, CAMERA_PX_SCALE_Presets, AddPixelScalePreset, CAMERA_PAPER_Presets, AddPaperResPreset, CAMERA_PAPER_SCALE_Presets, AddPaperScalePreset, My_Panel
 from .bind_marker import Bind_Marker
+from bpy.app.handlers import persistent
 
 importlib.reload(developer_utils)
 modules = developer_utils.setup_addon_modules(__path__, __name__, "bpy" in locals())
